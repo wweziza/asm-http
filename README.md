@@ -92,7 +92,8 @@ Or by opening `http://localhost:9966` in a web browser.
 
 ## Upcoming
 
-- Multiple handle for other files than index.html
+- Multiple handle for other files than index.html (Done)
+- Port the request handle to linux server
 
 
 
