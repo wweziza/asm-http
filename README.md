@@ -2,11 +2,16 @@
 
 This repository contains implementations of a simple HTTP server written in assembly language for both Windows and Linux environments. The server listens on port 9966 and responds with a basic HTML page.
 
+Now supported handle the request parsing the request
+
 ## Screenshot
 
 ![Browser Screenshot](images/browser.png)
 ![Console Screenshot](images/console.png)
-
+http://localhost:9966/
+![Browser Screenshot](images/about.png)
+http://localhost:9966/about
+![Console Screenshot](images/home.png)
 ## Windows Version
 
 ### Requirements
@@ -22,17 +27,19 @@ This repository contains implementations of a simple HTTP server written in asse
 
 4. Assemble the code:
    ```
-   ml /c /coff server_win.asm
+   ml /c /coff start.asm
+   ml /c /coff pages\index.asm
+   ml /c /coff pages\about.asm
    ```
 
 5. Link the object file:
    ```
-   link /subsystem:console server_win.obj
+   link /subsystem:console start.obj index.obj about.obj
    ```
 
 6. Run the server:
    ```
-   server_win.exe
+   start.exe
    ```
 
 7. Open a web browser and navigate to `http://localhost:9966` to see the server response.
