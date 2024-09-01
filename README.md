@@ -2,7 +2,7 @@
 
 This repository contains implementations of a simple HTTP server written in assembly language for both Windows and Linux environments. The server listens on port 9966 and responds with a basic HTML page.
 
-Now supported handle the request parsing the request
+Now supported handle and parsing the request
 
 ## Screenshot
 
