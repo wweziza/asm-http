@@ -103,4 +103,4 @@ Feel free to fork this repository and submit pull requests with improvements or 
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [WTFPL License](LICENSE).
